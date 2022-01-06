@@ -14,11 +14,12 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 public class base {
 	
 	public WebDriver driver;
+	public Properties prop;
 	public WebDriver initializeDriver() throws IOException
 	{
 	
-		Properties prop = new Properties();
-	 FileInputStream fis = new FileInputStream("D:\\Eclipse\\eclipse_workspace\\OcuityPortal\\src\\main\\java\\resources\\data.properties");
+	prop = new Properties();
+	 FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"\\src\\main\\java\\resources\\data.properties");
 	 
 	 prop.load(fis);
 	 String BrowserName = prop.getProperty("browser");
@@ -28,12 +29,12 @@ public class base {
 	 
 	 if (BrowserName.equals("chrome"))
 	 {
-		 System.setProperty("webdriver.chrome.driver", "D:\\Selenium\\chromedriver_v-96\\chromedriver.exe");
+		 System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\drivers\\chromedriver_96\\chromedriver.exe");
 		    driver = new ChromeDriver();
 	 }
 	 else if (BrowserName.equals("firefox"))
 	 {
-		 System.setProperty("webdriver.firefox.driver", "D:\\Selenium\\geckodriver-v0.29.0-win64\\geckodriver.exe");
+		 System.setProperty("webdriver.firefox.driver", System.getProperty("user.dir")+"\\drivers\\firefoxdriver\\geckodriver.exe");
 	        driver = new FirefoxDriver();
 	 }
 	 else if (BrowserName.equals("IE"))

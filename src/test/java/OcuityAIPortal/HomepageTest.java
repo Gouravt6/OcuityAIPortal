@@ -2,6 +2,7 @@ package OcuityAIPortal;
 
 import java.io.IOException;
 import java.sql.Driver;
+import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -29,8 +30,8 @@ public class HomepageTest extends base{
 	public void loginTest() {
 		
 		loginPage ln = new loginPage(driver);
-		ln.Email().sendKeys("autoai111@opentrash.com");
-	    ln.Password().sendKeys("DMI@2021");
+		ln.Email().sendKeys(prop.getProperty("username"));
+	    ln.Password().sendKeys(prop.getProperty("password"));
 		ln.SignIn().click();                    
 		
 	}
