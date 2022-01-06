@@ -21,8 +21,7 @@ public class pageLocation {
 	
 	By ok = By.xpath("//div[@class='swal2-buttonswrapper']/button");
 	
-	By edit = By.tagName("a");
-			//xpath("//table[@id='datatables']/tbody/tr/td/a");
+	By edit = By.xpath("//table[@id='datatables']/tbody/tr/td/a");
 	
 	By cancel = By.xpath("//div[@class='col-md-12']/div[4]/div/button");
 	

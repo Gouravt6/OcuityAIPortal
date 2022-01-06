@@ -23,6 +23,7 @@ public class HomepageTest extends base{
 	public void baseNavigation() throws IOException
 	{
 	driver = initializeDriver();
+	driver.get(prop.getProperty("URL"));
 	}
 
 
@@ -35,6 +36,8 @@ public class HomepageTest extends base{
 		ln.SignIn().click();                    
 		
 	}
+    
+ 
 }
 
 

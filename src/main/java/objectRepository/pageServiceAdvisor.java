@@ -24,6 +24,7 @@ public class pageServiceAdvisor {
 	By ok = By.xpath("//div[@class='swal2-buttonswrapper']/button");
 	
 	By edit = By.xpath("//table[@id='datatables']/tbody/tr/td/a");
+	//((JavascriptExecutor)driver).executeScript("arguments[0].click();
 	
 	By cancel = By.xpath("//div[@class='col-md-12']/div[4]/div/button");
 	

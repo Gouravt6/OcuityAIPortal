@@ -1,0 +1,23 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 19.518 s <<< FAILURE! - in TestSuite
+OcuityAIPortal.ServiceadvisorTest.addServiceAdvisorTest  Time elapsed: 0.002 s  <<< FAILURE!
+java.lang.NullPointerException
+	at OcuityAIPortal.ServiceadvisorTest.addServiceAdvisorTest(ServiceadvisorTest.java:18)
+
+OcuityAIPortal.ServiceadvisorTest.editServiceAdvisorTest  Time elapsed: 0 s  <<< FAILURE!
+java.lang.NullPointerException
+	at OcuityAIPortal.ServiceadvisorTest.editServiceAdvisorTest(ServiceadvisorTest.java:32)
+
+OcuityAIPortal.ServiceadvisorTest.deleteServiceAdvisor  Time elapsed: 0 s  <<< FAILURE!
+java.lang.NullPointerException
+	at OcuityAIPortal.ServiceadvisorTest.deleteServiceAdvisor(ServiceadvisorTest.java:46)
+
+OcuityAIPortal.locationTest.loginTest  Time elapsed: 0.003 s  <<< FAILURE!
+java.lang.NullPointerException
+
+OcuityAIPortal.locationTest.addLocation  Time elapsed: 0.005 s  <<< FAILURE!
+java.lang.NullPointerException
+	at OcuityAIPortal.locationTest.addLocation(locationTest.java:18)
+

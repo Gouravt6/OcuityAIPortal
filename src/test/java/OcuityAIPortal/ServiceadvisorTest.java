@@ -11,8 +11,6 @@ import resources.base;
 
 public class ServiceadvisorTest extends HomepageTest{
 	
-
-	
 	@Test(priority=2)
 	public void addServiceAdvisorTest() throws IOException
 	{
@@ -21,7 +19,7 @@ public class ServiceadvisorTest extends HomepageTest{
 		sa.Admin().click();
 		sa.ServiceAdvisor().click();
 		sa.AddNew().click();
-		sa.Name().sendKeys("Manddissa");
+		sa.Name().sendKeys(prop.getProperty("serviceadvisoradd"));
 		sa.Save().click();
 		sa.OK().click();
 		
@@ -31,24 +29,14 @@ public class ServiceadvisorTest extends HomepageTest{
 	public void editServiceAdvisorTest()
 	{
 		pageServiceAdvisor saEdit = new pageServiceAdvisor(driver);
-		try {
 		saEdit.Edit().click();
 		saEdit.Cancel().click();
 		saEdit.Edit().click();
 		saEdit.Name().clear();
-		saEdit.Name().sendKeys("Mandy");
+		saEdit.Name().sendKeys(prop.getProperty("serviceadvisoredit"));
 		saEdit.Save().click();
 		saEdit.OK().click();
 		}
-		catch(Exception e)
-		{
-			System.out.println("Edit failed");
-		}
-		
-		
-		
-		
-	}
 	
 	@Test(priority=4)
 	public void deleteServiceAdvisor() {
@@ -59,7 +47,5 @@ public class ServiceadvisorTest extends HomepageTest{
 		saDel.Delete().click();
 		
 	}
-	
-	
 
 }
