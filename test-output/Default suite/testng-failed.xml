@@ -6,8 +6,6 @@
       <class name="OcuityAIPortal.ServiceadvisorTest">
         <methods>
           <include name="baseNavigation"/>
-          <include name="deleteServiceAdvisor"/>
-          <include name="addServiceAdvisorTest"/>
           <include name="editServiceAdvisorTest"/>
         </methods>
       </class> <!-- OcuityAIPortal.ServiceadvisorTest -->

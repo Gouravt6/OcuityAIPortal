@@ -5,19 +5,12 @@
     <classes>
       <class name="OcuityAIPortal.locationTest">
         <methods>
-          <include name="tearDown"/>
           <include name="baseNavigation"/>
           <include name="addLocation"/>
           <include name="loginTest"/>
+          <include name="EditLocation"/>
         </methods>
       </class> <!-- OcuityAIPortal.locationTest -->
-      <class name="OcuityAIPortal.ServiceadvisorTest">
-        <methods>
-          <include name="baseNavigation"/>
-          <include name="deleteServiceAdvisor"/>
-          <include name="addServiceAdvisorTest"/>
-        </methods>
-      </class> <!-- OcuityAIPortal.ServiceadvisorTest -->
       <class name="OcuityAIPortal.HomepageTest">
         <methods>
           <include name="baseNavigation"/>

@@ -8,66 +8,14 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num attn">5</td><td class="num">37,250</td><td></td><td></td></tr>
+<tr><th colspan="8">Default suite</th></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">45,721</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">OcuityAIPortal.locationTest</td><td><a href="#m0">tearDown</a></td><td rowspan="1">1641466175145</td><td rowspan="1">2</td></tr><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">OcuityAIPortal.HomepageTest</td><td><a href="#m1">loginTest</a></td><td rowspan="1">1641466175112</td><td rowspan="1">3</td></tr><tr class="failedodd"><td rowspan="2">OcuityAIPortal.ServiceadvisorTest</td><td><a href="#m2">addServiceAdvisorTest</a></td><td rowspan="1">1641466153214</td><td rowspan="1">16986</td></tr><tr class="failedodd"><td><a href="#m3">deleteServiceAdvisor</a></td><td rowspan="1">1641466173880</td><td rowspan="1">1223</td></tr><tr class="failedeven"><td rowspan="2">OcuityAIPortal.locationTest</td><td><a href="#m4">addLocation</a></td><td rowspan="1">1641466175131</td><td rowspan="1">6</td></tr><tr class="failedeven"><td><a href="#m5">loginTest</a></td><td rowspan="1">1641466175120</td><td rowspan="1">4</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">OcuityAIPortal.ServiceadvisorTest</td><td><a href="#m6">editServiceAdvisorTest</a></td><td rowspan="1">1641466170211</td><td rowspan="1">3667</td></tr><tr class="passedeven"><td><a href="#m7">loginTest</a></td><td rowspan="1">1641466149555</td><td rowspan="1">3641</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">OcuityAIPortal.ServiceadvisorTest</td><td><a href="#m0">addServiceAdvisorTest</a></td><td rowspan="1">1641626345885</td><td rowspan="1">19978</td></tr><tr class="passedeven"><td><a href="#m1">deleteServiceAdvisor</a></td><td rowspan="1">1641626371482</td><td rowspan="1">4309</td></tr><tr class="passedeven"><td><a href="#m2">editServiceAdvisorTest</a></td><td rowspan="1">1641626365867</td><td rowspan="1">5612</td></tr><tr class="passedeven"><td><a href="#m3">loginTest</a></td><td rowspan="1">1641626341114</td><td rowspan="1">4755</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">OcuityAIPortal.locationTest#tearDown</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
-	at OcuityAIPortal.locationTest.tearDown(locationTest.java:30)
-... Removed 24 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">OcuityAIPortal.HomepageTest#loginTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
-	at objectRepository.loginPage.Email(loginPage.java:25)
-	at OcuityAIPortal.HomepageTest.loginTest(HomepageTest.java:34)
-	at java.util.ArrayList.forEach(Unknown Source)
-... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">OcuityAIPortal.ServiceadvisorTest#addServiceAdvisorTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;em _ngcontent-xye-c2=&quot;&quot; class=&quot;demo-icon iconadd_new&quot;&gt;&lt;/em&gt; is not clickable at point (934, 87). Other element would receive the click: &lt;div class=&quot;loading&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=96.0.4664.110)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DML-05879&apos;, ip: &apos;192.168.1.3&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_311&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\gtiwari\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:65064}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 7a783b6df229cbd36825afb62228e9b8
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at OcuityAIPortal.ServiceadvisorTest.addServiceAdvisorTest(ServiceadvisorTest.java:21)
-	at java.util.ArrayList.forEach(Unknown Source)
-... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">OcuityAIPortal.ServiceadvisorTest#deleteServiceAdvisor</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a _ngcontent-xye-c2=&quot;&quot;&gt;...&lt;/a&gt; is not clickable at point (163, 214). Other element would receive the click: &lt;div class=&quot;swal2-container swal2-fade swal2-shown&quot; style=&quot;overflow-y: hidden;&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=96.0.4664.110)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DML-05879&apos;, ip: &apos;192.168.1.3&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_311&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\gtiwari\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:65064}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 7a783b6df229cbd36825afb62228e9b8
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at OcuityAIPortal.ServiceadvisorTest.deleteServiceAdvisor(ServiceadvisorTest.java:46)
-	at java.util.ArrayList.forEach(Unknown Source)
-... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">OcuityAIPortal.locationTest#addLocation</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
-	at objectRepository.pageLocation.Menu(pageLocation.java:41)
-	at OcuityAIPortal.locationTest.addLocation(locationTest.java:18)
-	at java.util.ArrayList.forEach(Unknown Source)
-... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">OcuityAIPortal.locationTest#loginTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
-	at objectRepository.loginPage.Email(loginPage.java:25)
-	at OcuityAIPortal.HomepageTest.loginTest(HomepageTest.java:34)
-	at java.util.ArrayList.forEach(Unknown Source)
-... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">OcuityAIPortal.ServiceadvisorTest#editServiceAdvisorTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m7">OcuityAIPortal.ServiceadvisorTest#loginTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Default test</h2><h3 id="m0">OcuityAIPortal.ServiceadvisorTest#addServiceAdvisorTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">OcuityAIPortal.ServiceadvisorTest#deleteServiceAdvisor</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">OcuityAIPortal.ServiceadvisorTest#editServiceAdvisorTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">OcuityAIPortal.ServiceadvisorTest#loginTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
