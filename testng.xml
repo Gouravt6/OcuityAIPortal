@@ -1,12 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-  <test thread-count="5" name="Test">
+
+   <test  name="App Test">
+    <classes>
+      <class name="OcuityAIPortal.AppTest"/>
+    </classes>
+  </test>
+
+ <test  name="Home page Test">
+    <classes>
+      <class name="OcuityAIPortal.HomepageTest"/>
+    </classes>
+ </test>
+ 
+  <test  name="Service advisor Test">
     <classes>
       <class name="OcuityAIPortal.ServiceadvisorTest"/>
-      <class name="OcuityAIPortal.AppTest"/>
-      <class name="OcuityAIPortal.HomepageTest"/>
+      </classes>
+  </test>
+
+       <test  name="Location Test">
+    <classes>
       <class name="OcuityAIPortal.locationTest"/>
     </classes>
-  </test> <!-- Test -->
+    </test>
+   
 </suite> <!-- Suite -->

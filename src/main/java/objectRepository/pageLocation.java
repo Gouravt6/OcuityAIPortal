@@ -13,19 +13,22 @@ public class pageLocation {
 	
 	By locations = By.xpath("//a[@href ='/location']") ;
 	
-	By addNew = By.xpath("//div[@class='card-content']/div/button/em");
+	By addNew = By.xpath("//div[@class='card-content']/div/button");
 	
 	By name = By.id("LocationName");
 	
 	By save = By.xpath("//button[@type='submit']");
 	
-	By ok = By.xpath("//div[@class='swal2-buttonswrapper']/button");
+	By ok = By.xpath("//button[contains(text(),'OK')]");
 	
-	By edit = By.xpath("//table[@id='datatables']/tbody/tr/td/a");
+	//By edit = By.xpath("//table[@id='datatables']/tbody/tr/td/a");
 	
 	By cancel = By.xpath("//div[@class='col-md-12']/div[4]/div/button");
 	
 	By delete = By.xpath("//div[@class='col-md-12']/div/div/button");
+	
+	By confirmDelete = By.xpath("//*[(text()='Delete')]");
+	
 	
 	WebDriver driver;	
 
@@ -70,10 +73,8 @@ public class pageLocation {
 		return driver.findElement(ok);
 	}
 
-	public WebElement Edit()
-	{
-		return driver.findElement(edit);
-	}
+	//public WebElement Edit()
+		//return driver.findElement(edit);
 	
 	public WebElement Cancel()
 	{
@@ -84,5 +85,11 @@ public class pageLocation {
 	{
 		return driver.findElement(delete);
 	}
+	
+	public WebElement ConfirmDelete()
+	{
+		return driver.findElement(confirmDelete);
+	}
 }
+
 

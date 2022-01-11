@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class hamburgerMenu {
+public class HamburgerMenu {
 	
 	By menu = By.xpath("//div[@class='navbar-minimize']/button/em");
 	
@@ -12,18 +12,16 @@ public class hamburgerMenu {
 	
 	By serviceadvisor = By.xpath("//a[@href ='/serviceadvisor']") ;
 	
-	By addNew = By.xpath("//div[@class='card-content']/div/button/em");
+	By locations = By.xpath("//a[@href ='/location']");
 	
-	By name = By.id("Name");
-	
-	By save = By.xpath("//button[@type='submit']");
+	By users  = By.xpath("//a[@href ='/userpage']");
 	
 	WebDriver driver;
 	
 	
 	
 	
-	public hamburgerMenu(WebDriver driver) {
+	public HamburgerMenu(WebDriver driver) {
 		// TODO Auto-generated constructor stub
 		this.driver = driver;
 	}
@@ -45,19 +43,14 @@ public class hamburgerMenu {
 		return driver.findElement(serviceadvisor);
 	}
 
-	public WebElement AddNew()
+	public WebElement Location()
 	{
-		return driver.findElement(addNew);
+		return driver.findElement(locations);
 	}
 	
-	public WebElement Name()
+	public WebElement Users()
 	{
-		return driver.findElement(name);
-	}
-	
-	public WebElement Save()
-	{
-		return driver.findElement(save);
+		return driver.findElement(users);
 	}
 	
 	

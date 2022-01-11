@@ -8,14 +8,6 @@ import org.openqa.selenium.WebElement;
 
 public class pageServiceAdvisor {
 	
-
-	By menu = By.xpath("//div[@class='navbar-minimize']/button/em");
-	
-	//By menu = By.id("minimizeSidebar");
-	
-	By admin = By.xpath("//a[@title='Admin']/p/em");
-	
-	By serviceadvisor = By.xpath("//a[@href ='/serviceadvisor']") ;
 	
 	By addNew = By.xpath("//div[@class='card-content']/div/button/em");
 	
@@ -43,21 +35,6 @@ public class pageServiceAdvisor {
 	public pageServiceAdvisor(WebDriver driver) {
 		// TODO Auto-generated constructor stub
 		this.driver = driver;
-	}
-
-	public WebElement Menu()
-	{
-		return driver.findElement(menu);
-	}
-	
-	public WebElement Admin()
-	{
-		return driver.findElement(admin);
-	}
-	
-	public WebElement ServiceAdvisor()
-	{
-		return driver.findElement(serviceadvisor);
 	}
 
 	public WebElement AddNew()

@@ -1,22 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test thread-count="5" name="Test(failed)">
+  <test thread-count="5" name="Location Test(failed)">
     <classes>
       <class name="OcuityAIPortal.locationTest">
         <methods>
-          <include name="baseNavigation"/>
+          <include name="tearDown"/>
+          <include name="deleteLocation"/>
           <include name="addLocation"/>
+          <include name="baseNavigation"/>
+          <include name="editLocation"/>
           <include name="loginTest"/>
-          <include name="EditLocation"/>
         </methods>
       </class> <!-- OcuityAIPortal.locationTest -->
-      <class name="OcuityAIPortal.HomepageTest">
-        <methods>
-          <include name="baseNavigation"/>
-          <include name="loginTest"/>
-        </methods>
-      </class> <!-- OcuityAIPortal.HomepageTest -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- Location Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class loginPage {
+public class Pagelogin {
 	
 	By emailid = By.xpath("//input[@type='email']");
 	
@@ -15,7 +15,7 @@ public class loginPage {
 	WebDriver driver;
 
 
-   public loginPage(WebDriver driver) {
+   public Pagelogin(WebDriver driver) {
 		// TODO Auto-generated constructor stub
 	   this.driver = driver;
 	}
